@@ -41,6 +41,12 @@ You are also welcome to work with interesting subsets: you might want to compare
 
 The PostgreSQL backup was created using the command: pg_dump ontimedata > ontimedata.sql
 
+0. join & uncompress the two sql compressed files using 
+
+`cat ontimedata.sql.bz2.00* > ontimedata.sql.bz2`
+
+`bzip2 -d ontimedata.sql.bz2`
+
 1. To install the database, at the command prompt:
 
 psql ontimedata < ontimedata.sql
